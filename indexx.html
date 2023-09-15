@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perkenalan Diri</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header, main, footer {
+            width: 80%;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        header h1, footer p {
+            text-align: center;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+        }
+        article {
+            flex-basis: 70%;
+        }
+        aside {
+            flex-basis: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        aside img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        /* Responsif untuk tablet dan mobile */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+            article, aside {
+                flex-basis: auto;
+                width: 100%;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Contoh manipulasi DOM dengan JavaScript
+            var h1 = document.querySelector('h1');
+            h1.style.color = 'blue';
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Selamat datang di halaman perkenalan diri saya!</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Biodata Diri</h2>
+            <p>Nama : Sony Alfauzan</p>
+            <p>Usia : 21 tahun</p>
+            <p>Domisili : Tarakan</p>
+        </article>
+
+        <aside>
+            <img src="https://media.licdn.com/dms/image/D5603AQGwhIdl8E7BBg/profile-displayphoto-shrink_800_800/0/1681261091505?e=2147483647&v=beta&t=TgnR0SdzkVVVvTOmxfG6rutFKgag-lYUKOlwFLFmnUg" alt="Foto Saya">
+            <p>Ini adalah foto saya...</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2023 Sony Alfauzan</p>
+    </footer>
+</body>
+</html>
